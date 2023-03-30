@@ -1,0 +1,544 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+.arriba
+{
+    background-color: #9fa3ae;
+    width: 100%;
+    height: 20%;
+}
+
+.imgtit
+{
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    margin: 10px;
+}
+.logo
+{
+    background-color: #000000;
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+.tit
+{
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+}
+.titulo
+{
+    background-color: #000000;
+    width: 35%;
+    height: 100%;
+    display: inline-block;
+    }
+
+#barra
+{
+    background-color: #000;
+    float: right;
+    width: 55%;
+    height: 100%;
+}
+    
+#barra ul
+{
+    list-style: none;
+    margin: 20px;
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}    
+    
+#barra ul li
+{
+    display: inline-block;
+}
+    
+#barra ul li a
+{
+    color: #ffffff;
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+#barra ul li a:hover
+{
+    background-color: rgb(0, 105, 105);
+}
+
+.Medio 
+{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: #000000;
+    text-align: center;
+}
+
+.abajo
+{
+    background-color: #000000;
+    width: 100%;
+    height: 11%;
+    font-size: 20px;
+    font-weight: small-caps;
+}
+
+.izquierda
+{
+    background-color: #030303;
+    width: 40%;
+    height: 100%;
+    float: left;
+    font-size: 20px;
+}
+
+.Autor
+{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-left: 140px;
+}
+
+.centro
+{
+    background-color: #000000;
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    }
+    
+.redes
+{
+    width: 24px;
+    height: 22px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.redesins
+{
+    width: 30px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.derecha
+{
+    background-color: #000000;
+    width: 40%;
+    height: 100%;
+    float: right;
+    font-size: 20px;
+    }
+
+.Fans
+{
+    font-family: 'Permanent Marker';
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    padding-right: 35px;
+    margin-top: 15px;
+    margin-left: 160px;
+}
+
+/* Galeria*/
+.caja
+{
+    border: 1px solid black;
+    background-color: aqua;
+    color: blue;
+    font-weight: bold;
+    width: 200px;
+    /*height: 100px;*/
+    line-height: 100px;
+    text-align: center;
+    margin: 5px;
+
+}
+
+.flex-container
+{
+    background-image: linear-gradient(to left, #010B16, #001F40, #003F81) ;
+    border: 0px solid black;
+    background-color: #212F3C;
+    padding: 0px;
+    width: 100%;
+    height: 440px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.c1
+{
+    background-color: rgb(157, 255, 0);
+    background-image: url(../Wallpapers/lukaes.jpg);
+    order: 10;
+}
+
+.c2
+{
+    background-color: rgb(2, 49, 49);
+    background-image: url(../Wallpapers/Luka2.jpg);
+    order: 9;
+}
+
+.c3
+{
+    background-color: aqua;
+    background-image: url(../Wallpapers/Luka3.jpg);
+    order: 5;
+}
+
+.c4
+{
+    background-color: rgb(128, 0, 60);
+    background-image: url(../Wallpapers/Luka4.jpg);
+    order: 6;
+}
+
+.c5
+{
+    background-color: rgb(194, 2, 50);
+    background-image: url(../Wallpapers/Luka5.jpg);
+    order: 4;
+}
+
+.c6
+{
+    background-color: rgb(194, 2, 50);
+    background-image: url(../Wallpapers/Luka6.jpg);
+    order: 8;
+}
+
+.c7
+{
+    background-color: rgb(194, 2, 50);
+    background-image: url(../Wallpapers/Luka7.jpg);
+    order: 2;
+}
+
+.c8
+{
+    background-color: rgb(194, 2, 50);
+    background-image: url(../Wallpapers/Luka8.jpg);
+    order: 1;
+}
+
+.c9
+{
+    background-color: rgb(194, 2, 50);
+    background-image: url(../Wallpapers/Luka9.jpeg);
+    order: 3;
+}
+
+.c10
+{
+    background-color: rgb(194, 2, 50);
+    background-image: url(../Wallpapers/Luka10.jpg);
+    order: 11;
+}
+
+.c11
+{
+    background-color: rgb(194, 2, 50);
+    background-image: url(../Wallpapers/Luka11.jpg);
+    order: 12;
+}
+
+.c12
+{
+    background-color: rgb(194, 2, 50);
+    background-image: url(../Wallpapers/Luka12.jpg);
+    order: 7;
+}
+
+/*Biografia*/
+.MercadoLuka
+{
+    background-image: url(/Logo/Doncic.webp);
+    margin-left: 80px;
+    padding: 10px;
+}
+.MercadoLuka:hover
+{
+    background-color: rgb(255, 255, 255);
+}
+
+.Container
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 2fr 2fr 0.5fr;
+    grid-template-areas: 'Title Title Title '
+                         'nav nav nav'
+                         'main main main'
+                         'Cb1 Cb2 Cb3'
+                         'footer footer footer';
+   
+}
+
+.imgtit
+{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+}
+
+.Title
+{
+    background-color: rgb(0, 0, 0);
+    grid-area: Title;
+    color: white;
+    font-size: 80px;
+}
+
+.navBio
+{
+    width: 99.7%;
+    background-color: rgb(0, 0, 0);
+    grid-area: nav;
+    border: 2px solid rgb(0, 2, 94);
+}
+
+#Barrabio
+{
+    background-color: #000;
+    float: left;
+    height: 100%;
+}
+    
+#Barrabio ul
+{
+    list-style: none;
+    margin: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}    
+    
+#Barrabio ul li
+{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+#Barrabio ul li a
+{
+    color: #ffffff;
+    display:inline-block;
+    padding: 0px 40px;
+    text-decoration: none;
+}
+
+#Barrabio ul li a:hover
+{
+    background-color: rgb(0, 105, 105);
+}
+
+main
+{
+    background-image: linear-gradient(to left, #010B16, #001F40, #003F81) ;
+    grid-area: main;
+}
+
+.cajaBio
+{
+    background-image: linear-gradient(to left, #010B16, #001F40, #003F81) ;
+    border: 5px solid rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#Cb1
+{
+    background-color: black;
+    grid-area: Cb1;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    padding: 15px;
+    text-align: center;
+
+}
+
+#Cb2
+{
+    background-color: black;
+    grid-area: Cb2;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#Cb3
+{
+    background-color: black;
+    grid-area: Cb3;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+footer
+{
+    width: auto;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    grid-area: footer;
+    border: 1px solid rgb(0, 2, 94);
+}
+
+@media only screen and (max-width: 550px)
+{
+    .Container
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr 1.5fr 1.5fr 1.5fr 1fr;
+        grid-template-areas: 'Title'
+                             'nav'
+                             'main'
+                             'Cb1'
+                             'Cb2'
+                             'Cb3'
+                             'footer';
+    }
+
+.imgtit
+{
+    width: 40px;
+    height: 40px;
+}
+
+.Title
+{
+    font-size: 40px;
+}
+
+    /*Barra de navegacion*/
+#Barrabio ul
+{
+    margin: 10px;
+    font-size: 10px;
+}    
+    
+#Barrabio ul li
+{
+    margin-right: 0px;
+}
+
+#Barrabio ul li a
+{
+    color: #ffffff;
+    display:inline-block;
+    padding: 0px 3px;
+    text-decoration: none;
+}
+
+/*footer*/
+.Autor
+{
+    font-size: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+    
+.MercadoLuka
+{
+    width: 40px;
+    height: 30px;
+    margin-left: 5px;
+    padding: 25px;
+}
+
+.derecha
+{
+    width: 35%;
+}
+
+.Fans
+{
+    font-size: 10px;
+    padding-right: 30px;
+    margin-top: 28px;
+    margin-left: 15px;
+}
+}
+
+/*HIGHLIGHTS*/
+
+.ArribaHig
+{
+    background-color: rgb(0, 0, 0);
+}
+
+.Container-fluid
+{
+    z-index: 99;
+    display: grid;
+}
+
+.barraHig
+{
+    height: 10%;
+    background-color: #ffffff;
+}
+.CentroHig
+{
+    background-color: #0f2337;
+    display: grid;
+    align-items: center;
+}
+
+.AbajoHig
+{
+    height: 13%;
+    padding: 20px;
+    background-color: #000000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.GaleriaHig
+{
+    padding: 30px;
+}
+
+
+.card-body
+{
+    font-family: sans-serif;
+}
+.izquierdaHig
+{
+    text-align: right;
+}
+
+.derechaHig
+{
+    text-align: left;
+}
+
+/*contacto*/
+
