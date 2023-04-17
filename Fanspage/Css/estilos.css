@@ -1,0 +1,886 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container-index {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.3fr 5fr 0.3fr;
+  grid-template-areas: "Title" "nav" "main" "footer";
+}
+
+.title-index {
+  background-color: black;
+  grid-area: Title;
+  color: white;
+  font-size: 80px;
+  padding-top: 0px;
+  display: inline-flex;
+}
+
+.imgtit-index {
+  width: 80px;
+  height: 80px;
+}
+
+.nav-index {
+  width: auto;
+  background-color: black;
+  grid-area: nav;
+  border: 2px solid rgb(0, 2, 94);
+}
+
+#barra-index {
+  background-color: black;
+  float: left;
+  height: 100%;
+}
+#barra-index ul {
+  list-style: none;
+  margin: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+}
+#barra-index ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+#barra-index ul li a {
+  color: white;
+  display: inline-block;
+  padding: 0px 40px;
+  text-decoration: none;
+}
+#barra-index ul li a:hover {
+  background-color: rgb(0, 105, 105);
+}
+
+.main-index {
+  background-image: url(../Logo/Doncic.webp);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  grid-area: main;
+}
+
+.imagen-central {
+  width: 600px;
+  height: 780px;
+  display: flex;
+  margin-left: 85px;
+  opacity: 0.9;
+}
+
+.footer-index {
+  background-color: black;
+  border: 2px solid rgb(0, 2, 94);
+  grid-area: footer;
+}
+.footer-index .izquierda-index {
+  background-color: black;
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+.footer-index .Autor-index {
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+  font-weight: normal;
+  color: white;
+  padding-right: 15px;
+  margin-top: 5px;
+  margin-left: 140px;
+}
+.footer-index .centro-index {
+  background-color: black;
+  width: 20%;
+  height: 100%;
+  display: inline-flex;
+}
+.footer-index .redes-index {
+  margin-left: 30px;
+  padding-top: 5px;
+  width: 35px;
+  height: 35px;
+}
+.footer-index .derecha-index {
+  background-color: black;
+  width: 40%;
+  height: 100%;
+  float: right;
+}
+.footer-index .Fans-index {
+  font-family: "Permanent Marker";
+  font-size: 25px;
+  color: white;
+  font-weight: normal;
+  padding-right: 0px;
+  margin-top: 5px;
+  margin-left: 160px;
+}
+
+@media only screen and (max-width: 550px) {
+  .imgtit-index {
+    width: 50px;
+    height: 50px;
+  }
+  .title-index {
+    font-size: 40px;
+  }
+  #barra-index ul {
+    margin: 10px;
+    font-size: 10px;
+  }
+  #barra-index ul li {
+    margin-right: 0px;
+  }
+  #barra-index ul li a {
+    display: inline-block;
+    padding: 0px 3px;
+    text-decoration: none;
+  }
+  .main-index {
+    background-image: url(../Logo/Luka77.png);
+    background-attachment: local;
+  }
+  .imagen-central {
+    height: 200px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 85px;
+    opacity: 0.9;
+  }
+  .footer-index .izquierda-index {
+    width: 20%;
+    font-size: 8px;
+  }
+  .footer-index .Autor-index {
+    font-size: 8px;
+    padding-right: 5px;
+    padding-top: 4px;
+    margin-left: 5px;
+    text-align: center;
+  }
+  .footer-index .centro-index {
+    align-items: center;
+  }
+  .footer-index .redes-index {
+    margin-left: 25px;
+    width: 25px;
+    height: 25px;
+  }
+  .footer-index .Fans-index {
+    font-size: 8px;
+    padding: 10px;
+    margin-left: 30px;
+    text-align: center;
+  }
+}
+.MercadoLuka-bio {
+  background-image: url(/Logo/Doncic.webp);
+  margin-left: 80px;
+  padding: 10px;
+}
+
+.Container-bio {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 2fr 2fr 0.5fr;
+  grid-template-areas: "Title Title Title " "nav nav nav" "main main main" "Cb1 Cb2 Cb3" "footer footer footer";
+}
+
+.imgtit-bio {
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+}
+
+.Title-bio {
+  background-color: rgb(0, 0, 0);
+  grid-area: Title;
+  color: white;
+  font-size: 80px;
+}
+
+.navBio {
+  width: 99.7%;
+  background-color: black;
+  grid-area: nav;
+  border: 2px solid rgb(0, 2, 94);
+}
+
+#Barrabio {
+  background-color: black;
+  float: left;
+  height: 100%;
+}
+#Barrabio ul {
+  list-style: none;
+  margin: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+}
+#Barrabio ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+#Barrabio ul li a {
+  color: white;
+  display: inline-block;
+  padding: 0px 40px;
+  text-decoration: none;
+}
+#Barrabio ul li a:hover {
+  background-color: rgb(0, 105, 105);
+}
+
+.main-bio {
+  background-image: linear-gradient(to left, #010B16, #001F40, #003F81);
+  grid-area: main;
+}
+
+.cajaBio {
+  background-image: linear-gradient(to left, #010B16, #001F40, #003F81);
+  border: 5px solid rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+}
+
+#Cb1 {
+  background-color: black;
+  grid-area: Cb1;
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+#Cb2 {
+  background-color: black;
+  grid-area: Cb2;
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+#Cb3 {
+  background-color: black;
+  grid-area: Cb3;
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer-bio {
+  width: auto;
+  height: auto;
+  background-color: black;
+  grid-area: footer;
+  border: 1px solid rgb(0, 2, 94);
+}
+.footer-bio .izquierda-bio {
+  background-color: black;
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+.footer-bio .autor-bio {
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+  font-weight: normal;
+  color: white;
+  padding-right: 15px;
+  margin-top: 10px;
+  margin-left: 140px;
+}
+.footer-bio .centro-bio {
+  background-color: black;
+  width: 20%;
+  height: 100%;
+  display: inline-flex;
+}
+.footer-bio .MercadoLuka-bio {
+  background-image: url(../Logo/Doncic.webp);
+  margin-left: 90px;
+}
+.footer-bio .derecha-bio {
+  background-color: black;
+  width: 40%;
+  height: 100%;
+  float: right;
+}
+.footer-bio .Fans-bio {
+  font-family: "Permanent Marker";
+  font-size: 25px;
+  color: white;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-left: 160px;
+}
+
+@media only screen and (max-width: 550px) {
+  .Container-bio {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1.5fr 1.5fr 1.5fr 1fr;
+    grid-template-areas: "Title" "nav" "main" "Cb1" "Cb2" "Cb3" "footer";
+  }
+  .imgtit-bio {
+    width: 40px;
+    height: 40px;
+  }
+  .Title-bio {
+    font-size: 40px;
+  }
+  #Barrabio ul {
+    margin: 10px;
+    font-size: 10px;
+  }
+  #Barrabio ul li {
+    margin-right: 0px;
+  }
+  #Barrabio ul li a {
+    display: inline-block;
+    padding: 0px 3px;
+    text-decoration: none;
+  }
+  .footer-bio .Autor-bio {
+    font-size: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+    margin-left: 20px;
+  }
+  .footer-bio .MercadoLuka-bio {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+  }
+  .footer-bio .derecha-bio {
+    width: 35%;
+  }
+  .footer-bio .Fans-bio {
+    font-size: 10px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+}
+.container-galeria {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.3fr 5fr 0.3fr;
+  grid-template-areas: "Title" "nav" "main" "footer";
+}
+
+.title-galeria {
+  background-color: black;
+  grid-area: Title;
+  color: white;
+  font-size: 80px;
+  padding-top: 0px;
+  display: inline-flex;
+}
+
+.imgtit-galeria {
+  width: 80px;
+  height: 80px;
+}
+
+.nav-galeria {
+  width: auto;
+  background-color: black;
+  grid-area: nav;
+  border: 2px solid rgb(0, 2, 94);
+}
+
+#barra-galeria {
+  background-color: black;
+  float: left;
+  height: 100%;
+}
+#barra-galeria ul {
+  list-style: none;
+  margin: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+}
+#barra-galeria ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+#barra-galeria ul li a {
+  color: white;
+  display: inline-block;
+  padding: 0px 40px;
+  text-decoration: none;
+}
+#barra-galeria ul li a:hover {
+  background-color: rgb(0, 105, 105);
+}
+
+.caja {
+  border: 1px solid black;
+  background-color: aqua;
+  color: rgb(0, 2, 94);
+  font-weight: bold;
+  width: 200px;
+  line-height: 100px;
+  text-align: center;
+  margin: 5px;
+}
+
+.flex-container-galeria {
+  background-image: linear-gradient(to left, #010B16, #001F40, #003F81);
+  border: 0px solid black;
+  background-color: #212F3C;
+  padding: 0px;
+  width: 100%;
+  height: 440px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-galeria {
+  background-color: black;
+  border: 2px solid rgb(0, 2, 94);
+  grid-area: footer;
+}
+.footer-galeria .izquierda-galeria {
+  background-color: black;
+  width: 40%;
+  height: 100%;
+  float: left;
+  font-size: 25px;
+}
+.footer-galeria .Autor-galeria {
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+  font-weight: normal;
+  color: white;
+  padding-right: 15px;
+  margin-top: 5px;
+  margin-left: 140px;
+}
+.footer-galeria .centro-galeria {
+  background-color: black;
+  width: 20%;
+  height: 100%;
+  display: inline-flex;
+}
+.footer-galeria .redes-galeria {
+  margin-left: 30px;
+  padding-top: 5px;
+  width: 35px;
+  height: 35px;
+}
+.footer-galeria .derecha-galeria {
+  background-color: black;
+  width: 40%;
+  height: 100%;
+  float: right;
+}
+.footer-galeria .Fans-galeria {
+  font-family: "Permanent Marker";
+  font-size: 25px;
+  color: white;
+  font-weight: normal;
+  padding-right: 0px;
+  margin-top: 5px;
+  margin-left: 160px;
+}
+
+@media only screen and (max-width: 550px) {
+  .imgtit-galeria {
+    width: 50px;
+    height: 50px;
+  }
+  .title-galeria {
+    font-size: 40px;
+  }
+  #barra-galeria ul {
+    margin: 10px;
+    font-size: 10px;
+  }
+  #barra-galeria ul li {
+    margin-right: 0px;
+  }
+  #barra-galeria ul li a {
+    display: inline-block;
+    padding: 0px 3px;
+    text-decoration: none;
+  }
+  .caja {
+    width: 280px;
+    text-align: center;
+    margin: 4px;
+  }
+  .flex-container-galeria {
+    height: auto;
+    display: inline-block;
+  }
+  .wallpaper {
+    width: 310px;
+    height: 150px;
+  }
+  .footer-galeria .izquierda-galeria {
+    width: 20%;
+    font-size: 8px;
+  }
+  .footer-galeria .Autor-galeria {
+    font-size: 8px;
+    padding-right: 5px;
+    padding-top: 8px;
+    margin-left: 5px;
+    text-align: center;
+  }
+  .footer-galeria .centro-galeria {
+    align-items: center;
+  }
+  .footer-galeria .redes-galeria {
+    margin-left: 25px;
+    width: 25px;
+    height: 25px;
+  }
+  .footer-galeria .Fans-galeria {
+    font-size: 8px;
+    padding: 10px;
+    margin-left: 30px;
+    text-align: center;
+  }
+}
+.ArribaHig {
+  background-color: black;
+}
+
+.imgtit-Hig {
+  width: 90px;
+  height: 90px;
+}
+
+.Title-Hig {
+  background-color: black;
+  grid-area: Title;
+  color: white;
+  font-size: 60px;
+}
+
+.Container-fluid {
+  z-index: 99;
+  display: grid;
+}
+
+.barraHig {
+  height: 10%;
+  background-color: white;
+}
+
+.CentroHig {
+  background-color: #0f2337;
+  display: grid;
+  align-items: center;
+}
+
+.AbajoHig {
+  height: 13%;
+  padding: 10px;
+  background-color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.GaleriaHig {
+  padding: 30px;
+}
+
+.card-body {
+  font-family: sans-serif;
+}
+
+.izquierdaHig {
+  text-align: right;
+}
+
+.AutorHig {
+  color: #363636;
+}
+
+.derechaHig {
+  text-align: left;
+}
+
+.FansHig {
+  color: #363636;
+}
+
+.container-contacto {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.3fr 5fr 0.3fr;
+  grid-template-areas: "Title" "nav" "main" "footer";
+}
+
+.imgtit-contacto {
+  width: 90px;
+  height: 90px;
+}
+
+.title-contacto {
+  background-color: black;
+  grid-area: Title;
+  color: white;
+  font-size: 70px;
+}
+
+.nav-cont {
+  width: 100%;
+  background-color: black;
+  grid-area: nav;
+  border: 2px solid rgb(0, 2, 94);
+}
+
+#barra-cont {
+  background-color: black;
+  float: left;
+  height: 100%;
+}
+#barra-cont ul {
+  list-style: none;
+  margin: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+}
+#barra-cont ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+#barra-cont ul li a {
+  color: white;
+  display: inline-block;
+  padding: 0px 40px;
+  text-decoration: none;
+}
+#barra-cont ul li a:hover {
+  background-color: rgb(0, 105, 105);
+}
+
+.main-contacto {
+  background-image: url(../Imagenes/luka-doncic-nba-live-dj.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  grid-area: main;
+}
+
+.caja-contacto {
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.form-contacto {
+  background-color: black;
+  width: 400px;
+  position: relative;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+header {
+  width: 100%;
+  background-color: #080a96;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+header span {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+}
+
+.logo-contacto {
+  width: 90px;
+  height: 90px;
+}
+
+.contacto {
+  padding: 2rem;
+  overflow: hidden;
+  color: gray;
+}
+
+.contacto label, .contacto input, .contacto textarea {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.contacto label {
+  font-weight: 700;
+}
+
+.contacto input:not([type=submit]), .contacto textarea {
+  border: none;
+  border-bottom: 2px solid #1641ff;
+  margin-bottom: 10px;
+  font-size: 20px;
+  outline: none;
+  color: gray;
+}
+
+.contact textarea {
+  min-height: 100px;
+}
+
+input[type=submit] {
+  padding: 10px;
+  border: none;
+  background-color: #080a96;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer-contacto {
+  background-color: black;
+  grid-area: footer;
+  border: 2px solid rgb(0, 2, 94);
+}
+.footer-contacto .izquierda-contacto {
+  background-color: black;
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+.footer-contacto .autor-contacto {
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+  font-weight: normal;
+  color: white;
+  padding-right: 15px;
+  margin-top: 10px;
+  margin-left: 140px;
+}
+.footer-contacto .centro-contacto {
+  background-color: black;
+  width: 20%;
+  height: 100%;
+  display: inline-flex;
+}
+.footer-contacto .MercadoLuka-contacto {
+  background-image: url(../Logo/Doncic.webp);
+  margin-left: 90px;
+}
+.footer-contacto .derecha-contacto {
+  background-color: black;
+  width: 40%;
+  height: 100%;
+  float: right;
+}
+.footer-contacto .Fans-contacto {
+  font-family: "Permanent Marker";
+  font-size: 25px;
+  color: white;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-left: 160px;
+}
+
+@media only screen and (max-width: 550px) {
+  .container-contacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-areas: "Title" "nav" "main" "footer";
+  }
+  .imgtit-contacto {
+    width: 40px;
+    height: 40px;
+  }
+  .title-contacto {
+    font-size: 40px;
+  }
+  #barra-cont ul {
+    margin: 10px;
+    font-size: 10px;
+  }
+  #barra-cont ul li {
+    margin-right: 0px;
+  }
+  #barra-cont ul li a {
+    display: inline-block;
+    padding: 0px 3px;
+    text-decoration: none;
+  }
+  .main-contacto {
+    background-attachment: local;
+    background-image: url(../Imagenes/luka-movil.jpg);
+  }
+  .caja-contacto {
+    padding: 5px;
+    font-size: 12px;
+  }
+  .logo-contacto {
+    height: 50px;
+    width: 50px;
+  }
+  .form-contacto {
+    width: 250px;
+    top: 200px;
+  }
+  .contacto label, .contacto input, .contacto textarea {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .contacto input:not([type=submit]), .contacto textarea {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .contact textarea {
+    min-height: 100px;
+  }
+  input[type=submit] {
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .footer-contacto .autor-contacto {
+    font-size: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    margin-left: 12px;
+  }
+  .footer-contacto .MercadoLuka-contacto {
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
+    margin-top: 5px;
+  }
+  .footer-contacto .derecha-contacto {
+    width: 35%;
+  }
+  .footer-contacto .Fans-contacto {
+    font-size: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

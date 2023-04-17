@@ -1,0 +1,1198 @@
+//Variables
+
+//colores
+$color-principal: black;
+$color-secundario: white;
+$color-terceario: rgb(0, 2, 94);
+
+//tamaño de letras
+$fuente-titulo: 80px;
+$fuente-footer: 25px;
+$fuente-barra-nav: 15px;
+$fuente-celular: 12px;
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+//index
+.container-index
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.3fr 5fr 0.3fr;
+    grid-template-areas: 'Title'
+                         'nav'
+                         'main'
+                         'footer';
+}
+
+.title-index
+{
+    background-color: $color-principal;
+    grid-area: Title;
+    color: $color-secundario;
+    font-size: $fuente-titulo;
+    padding-top: 0px;
+    display: inline-flex;
+}
+
+.imgtit-index
+{
+    width: 80px;
+    height: 80px;
+}
+
+.nav-index
+{
+    width: auto;
+    background-color: $color-principal;
+    grid-area: nav;
+    border: 2px solid $color-terceario;
+}
+
+#barra-index
+{
+    background-color: $color-principal;
+    float: left;
+    height: 100%;
+
+    ul
+    {   
+        list-style: none;
+        margin: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: $fuente-barra-nav;
+    }
+
+    ul li
+    {
+        display: inline-block;
+        margin-right: 40px;
+    }
+
+    ul li a 
+    {
+        color: $color-secundario;
+        display:inline-block;
+        padding: 0px 40px;
+        text-decoration: none;
+        &:hover
+        {
+            background-color: rgb(0, 105, 105);
+        }
+    }
+
+}
+
+.main-index
+{
+    background-image: url(../Logo/Doncic.webp);
+    background-color: $color-principal;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    grid-area: main;
+    
+}
+
+.imagen-central
+{
+    width: 600px;
+    height: 780px;
+    display: flex;
+    margin-left: 85px;
+    opacity: 0.9;
+}
+
+.footer-index
+{
+    background-color: $color-principal;
+    border: 2px solid $color-terceario;
+    grid-area: footer;
+
+.izquierda-index
+    {
+        background-color: $color-principal;
+        width: 40%;
+        height: 100%;
+        float: left;
+    }
+
+    .Autor-index
+    {
+        font-family: 'Permanent Marker', cursive;
+        font-size: $fuente-footer;
+        font-weight: normal;
+        color: $color-secundario;
+        padding-right: 15px;
+        margin-top: 5px;
+        margin-left: 140px;
+    }
+
+    .centro-index
+    {
+        background-color: $color-principal;
+        width: 20%;
+        height: 100%;
+        display: inline-flex;
+    }
+    
+    .redes-index
+    {
+        margin-left: 30px;
+        padding-top: 5px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .derecha-index
+    {
+        background-color: $color-principal;
+        width: 40%;
+        height: 100%;
+        float: right;
+    }
+
+    .Fans-index
+    {
+        font-family: 'Permanent Marker';
+        font-size: $fuente-footer;
+        color: $color-secundario;
+        font-weight: normal;
+        padding-right: 0px;
+        margin-top: 5px;
+        margin-left: 160px;
+    }
+}
+
+//media-index
+@media only screen and (max-width: 550px)
+{
+    .imgtit-index
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .title-index
+    {
+        font-size: 40px;
+    }
+
+//Barra de navegacion
+    #barra-index ul
+    {
+        margin: 10px;
+        font-size: 10px;
+    }    
+    
+    #barra-index ul li
+    {
+        margin-right: 0px;
+    }
+
+    #barra-index ul li a
+    {
+        display:inline-block;
+        padding: 0px 3px;
+        text-decoration: none;
+    }
+
+//main
+    .main-index
+    {
+        background-image: url(./Logo/Luka77.png);
+        background-attachment: local;
+    }
+
+    .imagen-central
+    {
+        height: 200px;
+        width: 100px;
+        margin-left: 10px;
+        margin-top: 85px;
+        opacity: 0.9;
+    }
+
+//footer
+    .footer-index
+    {
+    .izquierda-index
+        {
+            width: 20%;
+            font-size: 8px;
+        }
+
+    .Autor-index
+        {
+            font-size: 8px;
+            padding-right: 5px;
+            padding-top: 4px;
+            margin-left: 5px;
+            text-align: center;
+        }
+
+    .centro-index
+        {
+            align-items: center;
+        }   
+        .redes-index
+        {
+            margin-left: 25px;
+            width: 25px;
+            height: 25px;
+        }
+
+        .Fans-index
+        {
+            font-size: 8px;
+            padding: 10px;
+            margin-left: 30px;
+            text-align: center;
+        }
+    }
+}
+
+//Biografia
+.MercadoLuka-bio
+{
+    background-image: url(/Logo/Doncic.webp);
+    margin-left: 80px;
+    padding: 10px;
+}
+
+.Container-bio
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 2fr 2fr 0.5fr;
+    grid-template-areas: 'Title Title Title '
+                         'nav nav nav'
+                         'main main main'
+                         'Cb1 Cb2 Cb3'
+                         'footer footer footer';
+   
+}
+
+.imgtit-bio
+{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+}
+
+.Title-bio
+{
+    background-color: rgb(0, 0, 0);
+    grid-area: Title;
+    color: $color-secundario;
+    font-size: $fuente-titulo;
+}
+
+.navBio
+{
+    width: 99.7%;
+    background-color: $color-principal;
+    grid-area: nav;
+    border: 2px solid rgb(0, 2, 94);
+}
+
+#Barrabio
+{
+    background-color: $color-principal;
+    float: left;
+    height: 100%;
+
+    ul
+    {
+        list-style: none;
+        margin: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: $fuente-barra-nav;
+    }    
+    
+    ul li
+    {
+        display: inline-block;
+        margin-right: 40px;
+    }
+
+    ul li a
+    {
+        color: $color-secundario;
+        display:inline-block;
+        padding: 0px 40px;
+        text-decoration: none;
+        &:hover
+        {
+            background-color: rgb(0, 105, 105);
+        }
+    }
+}
+
+.main-bio
+{
+    background-image: linear-gradient(to left, #010B16, #001F40, #003F81) ;
+    grid-area: main;
+}
+
+.cajaBio
+{
+    background-image: linear-gradient(to left, #010B16, #001F40, #003F81) ;
+    border: 5px solid rgb(0, 0, 0);
+    color: $color-secundario;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#Cb1
+{
+    background-color: $color-principal;
+    grid-area: Cb1;
+    font-family: 'Permanent Marker', cursive;
+    color: $color-secundario;
+    padding: 15px;
+    text-align: center;
+
+}
+
+#Cb2
+{
+    background-color: $color-principal;
+    grid-area: Cb2;
+    font-family: 'Permanent Marker', cursive;
+    color: $color-secundario;
+    padding: 15px;
+    text-align: center;
+}
+
+#Cb3
+{
+    background-color: $color-principal;
+    grid-area: Cb3;
+    font-family: 'Permanent Marker', cursive;
+    color: $color-secundario;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer-bio
+{
+    width: auto;
+    height: auto;
+    background-color: $color-principal;
+    grid-area: footer;
+    border: 1px solid $color-terceario;
+
+
+    .izquierda-bio
+    {
+        background-color:$color-principal;
+        width: 40%;
+        height: 100%;
+        float: left;
+    }
+
+    .autor-bio
+    {
+        font-family: 'Permanent Marker', cursive;
+        font-size: $fuente-footer;
+        font-weight: normal;
+        color: $color-secundario;
+        padding-right: 15px;
+        margin-top: 10px;
+        margin-left: 140px;
+    }
+
+    .centro-bio
+    {
+        background-color: $color-principal;
+        width: 20%;
+        height: 100%;
+        display: inline-flex;
+    }
+
+    .MercadoLuka-bio
+    {
+        background-image: url(../Logo/Doncic.webp);
+        margin-left: 90px;
+    }
+
+    .derecha-bio
+    {
+        background-color:$color-principal;
+        width: 40%;
+        height: 100%;
+        float: right;
+    }
+
+    .Fans-bio
+    {
+        font-family: 'Permanent Marker';
+        font-size: $fuente-footer;
+        color: $color-secundario;
+        font-weight: normal;
+        margin-top: 10px;
+        margin-left: 160px;
+    }
+}
+
+//Media Biografia
+@media only screen and (max-width: 550px)
+{
+    .Container-bio
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr 1.5fr 1.5fr 1.5fr 1fr;
+        grid-template-areas: 'Title'
+                             'nav'
+                             'main'
+                             'Cb1'
+                             'Cb2'
+                             'Cb3'
+                             'footer';
+    }
+
+    .imgtit-bio
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Title-bio
+    {
+        font-size: 40px;
+    }
+
+//Barra de navegacion
+    #Barrabio ul
+    {
+        margin: 10px;
+        font-size: 10px;
+    }    
+    
+    #Barrabio ul li
+    {
+        margin-right: 0px;
+    }
+
+    #Barrabio ul li a
+    {
+        display:inline-block;
+        padding: 0px 3px;
+        text-decoration: none;
+    }
+
+//footer
+    .footer-bio
+    {
+        .Autor-bio
+        {
+            font-size: 10px;
+            padding-right: 5px;
+            padding-top: 10px;
+            margin-left: 20px;
+        }
+
+        .MercadoLuka-bio
+        {
+            width: 30px;
+            height: 30px;
+            margin-left: 15px;
+        }
+
+        .derecha-bio
+        {
+            width: 35%;
+        }
+
+        .Fans-bio
+        {
+            font-size: 10px;
+            padding: 5px;
+            margin-top: 15px;
+            margin-left: 0px;
+        }
+    }
+}
+
+//Galeria
+.container-galeria
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.3fr 5fr 0.3fr;
+    grid-template-areas: 'Title'
+                         'nav'
+                         'main'
+                         'footer';
+   
+}
+.title-galeria
+{
+    background-color: $color-principal;
+    grid-area: Title;
+    color: $color-secundario;
+    font-size: $fuente-titulo;
+    padding-top: 0px;
+    display: inline-flex;
+}
+
+.imgtit-galeria
+{
+    width: 80px;
+    height: 80px;
+}
+
+.nav-galeria
+{
+    width: auto;
+    background-color: $color-principal;
+    grid-area: nav;
+    border: 2px solid $color-terceario;
+}
+
+#barra-galeria
+{
+    background-color: $color-principal;
+    float: left;
+    height: 100%;
+
+    ul
+    {
+        list-style: none;
+        margin: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: $fuente-barra-nav;
+    }    
+    
+    ul li
+    {
+        display: inline-block;
+        margin-right: 40px;
+    }
+
+    ul li a
+    {
+        color: $color-secundario;
+        display:inline-block;
+        padding: 0px 40px;
+        text-decoration: none;
+        &:hover
+            {
+                background-color: rgb(0, 105, 105);
+            }
+    }
+}
+
+.caja
+{
+    border: 1px solid $color-principal;
+    background-color: aqua;
+    color: $color-terceario;
+    font-weight: bold;
+    width: 200px;
+    line-height: 100px;
+    text-align: center;
+    margin: 5px;
+
+}
+
+.flex-container-galeria
+{
+    background-image: linear-gradient(to left, #010B16, #001F40, #003F81) ;
+    border: 0px solid $color-principal;
+    background-color: #212F3C;
+    padding: 0px;
+    width: 100%;
+    height: 440px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-galeria
+{
+    background-color: $color-principal;
+    border: 2px solid $color-terceario;
+    grid-area: footer;
+    
+    .izquierda-galeria
+    {
+        background-color: $color-principal;
+        width: 40%;
+        height: 100%;
+        float: left;
+        font-size: $fuente-footer;
+    }
+
+    .Autor-galeria
+    {
+        font-family: 'Permanent Marker', cursive;
+        font-size: $fuente-footer;
+        font-weight: normal;
+        color: $color-secundario;
+        padding-right: 15px;
+        margin-top: 5px;
+        margin-left: 140px;
+    }
+
+    .centro-galeria
+    {
+        background-color: $color-principal;
+        width: 20%;
+        height: 100%;
+        display: inline-flex;
+    }
+
+    .redes-galeria
+    {
+        margin-left: 30px;
+        padding-top: 5px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .derecha-galeria
+    {
+        background-color: $color-principal;
+        width: 40%;
+        height: 100%;
+        float: right;
+    }
+
+    .Fans-galeria
+    {
+        font-family: 'Permanent Marker';
+        font-size: $fuente-footer;
+        color: $color-secundario;
+        font-weight: normal;
+        padding-right: 0px;
+        margin-top: 5px;
+        margin-left: 160px;
+    }
+}
+
+//media-galeria
+@media only screen and (max-width: 550px)
+{
+    .imgtit-galeria
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .title-galeria
+    {
+        font-size: 40px;
+    }
+
+//Barra de navegacion
+    #barra-galeria ul
+    {
+        margin: 10px;
+        font-size: 10px;
+    }    
+    
+    #barra-galeria ul li
+    {
+        margin-right: 0px;
+    }
+
+    #barra-galeria ul li a
+    {
+        display:inline-block;
+        padding: 0px 3px;
+        text-decoration: none;
+    }
+
+    .caja
+    {
+        width: 280px;
+        text-align: center;
+        margin: 4px;
+    }
+
+    .flex-container-galeria
+    {
+        height: auto;
+        display:inline-block;
+    }
+
+    .wallpaper
+    {
+        width: 310px;
+        height: 150px;
+    }
+
+//footer
+    .footer-galeria
+    {
+
+        .izquierda-galeria
+        {
+            width: 20%;
+            font-size: 8px;
+        }
+
+        .Autor-galeria
+        {
+            font-size: 8px;
+            padding-right: 5px;
+            padding-top: 8px;
+            margin-left: 5px;
+            text-align: center;
+        }
+
+        .centro-galeria
+        {
+            align-items: center;
+        }
+
+        .redes-galeria
+        {
+            margin-left: 25px;
+            width: 25px;
+            height: 25px;
+        }
+
+        .Fans-galeria
+        {
+            font-size: 8px;
+            padding: 10px;
+            margin-left: 30px;
+            text-align: center;
+        }
+    }
+}
+
+//HIGHLIGHTS
+.ArribaHig
+{
+    background-color: $color-principal;
+}
+
+.imgtit-Hig
+{
+    width: 90px;
+    height: 90px;
+}
+
+.Title-Hig
+{
+    background-color: $color-principal;
+    grid-area: Title;
+    color: white;
+    font-size: 60px;
+}
+.Container-fluid
+{
+    z-index: 99;
+    display: grid;
+}
+
+.barraHig
+{
+    height: 10%;
+    background-color: $color-secundario;
+}
+.CentroHig
+{
+    background-color: #0f2337;
+    display: grid;
+    align-items: center;
+}
+
+.AbajoHig
+{
+    height: 13%;
+    padding: 10px;
+    background-color: $color-principal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.GaleriaHig
+{
+    padding: 30px;
+}
+
+.card-body
+{
+    font-family: sans-serif;
+}
+.izquierdaHig
+{
+    text-align: right;
+}
+
+.AutorHig
+{
+    color:#363636;
+}
+
+.derechaHig
+{
+    text-align: left;
+}
+
+.FansHig
+{
+    color: #363636;
+}
+
+//Contacto
+.container-contacto
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.3fr 5fr 0.3fr;
+    grid-template-areas: 'Title'
+                         'nav'
+                         'main'
+                         'footer';
+   
+}
+
+.imgtit-contacto
+{
+    width: 90px;
+    height: 90px;
+}
+
+.title-contacto
+{
+    background-color:$color-principal;
+    grid-area: Title;
+    color: $color-secundario;
+    font-size: 70px;
+}
+
+.nav-cont
+{
+    width: 100%;
+    background-color:$color-principal;
+    grid-area: nav;
+    border: 2px solid $color-terceario;
+}
+
+#barra-cont
+{
+    background-color: $color-principal;
+    float: left;
+    height: 100%;
+
+    ul
+    {
+        list-style: none;
+        margin: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: $fuente-barra-nav;
+    }    
+    
+    ul li
+    {
+        display: inline-block;
+        margin-right: 40px;
+    }
+
+    ul li a
+    {
+        color: $color-secundario;
+        display:inline-block;
+        padding: 0px 40px;
+        text-decoration: none;
+        &:hover
+        {
+            background-color: rgb(0, 105, 105);
+        }
+    }
+}
+
+.main-contacto
+{
+    background-image: url(./Imagenes/luka-doncic-nba-live-dj.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    grid-area: main;
+}
+
+.caja-contacto
+{
+    color: $color-secundario;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+
+//formulario
+.form-contacto
+{
+    background-color:$color-principal;
+    width: 400px;
+    position: relative;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+    border-radius: 10px;
+}
+
+header
+{
+    width: 100%;
+    background-color: #080a96;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+header span 
+{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+
+.logo-contacto
+{
+    width: 90px;
+    height: 90px;
+}
+.contacto
+{
+    padding: 2rem;
+    overflow: hidden;
+    color: gray;
+}
+
+.contacto label, .contacto input, .contacto textarea
+{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.contacto label
+{
+    font-weight: 700;
+}
+
+.contacto input:not([type='submit']), .contacto textarea
+{
+    border: none;
+    border-bottom: 2px solid #1641ff;
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: gray;
+}
+
+.contact textarea
+{
+    min-height: 100px;
+}
+
+input[type='submit']
+{
+    padding: 10px;
+    border: none;
+    background-color: #080a96;
+    border-radius: 5px;
+    color: $color-secundario;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.footer-contacto
+{
+    background-color:$color-principal;
+    grid-area: footer;
+    border: 2px solid $color-terceario;
+
+    .izquierda-contacto
+    {
+        background-color: $color-principal;
+        width: 40%;
+        height: 100%;
+        float: left;
+    }
+
+    .autor-contacto
+    {
+        font-family: 'Permanent Marker', cursive;
+        font-size: $fuente-footer;
+        font-weight: normal;
+        color: $color-secundario;
+        padding-right: 15px;
+        margin-top: 10px;
+        margin-left: 140px;
+    }
+
+    .centro-contacto
+    {
+        background-color:$color-principal;
+        width: 20%;
+        height: 100%;
+        display: inline-flex;
+    }
+
+    .MercadoLuka-contacto
+    {
+        background-image: url(../Logo/Doncic.webp);
+        margin-left: 90px;
+    }
+
+    .derecha-contacto
+    {
+        background-color: $color-principal;
+        width: 40%;
+        height: 100%;
+        float: right;
+    }
+
+    .Fans-contacto
+    {
+        font-family: 'Permanent Marker';
+        font-size: $fuente-footer;
+        color:$color-secundario;
+        font-weight: normal;
+        margin-top: 10px;
+        margin-left: 160px;
+    }
+}
+
+//media contacto
+@media only screen and (max-width: 550px)
+{
+    .container-contacto
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
+        grid-template-areas: 'Title'
+                             'nav'
+                             'main'
+                             'footer';
+    }
+
+    .imgtit-contacto
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .title-contacto
+    {
+        font-size: 40px;
+    }
+
+//Barra de navegacion
+    #barra-cont ul
+    {
+        margin: 10px;
+        font-size: 10px;
+    }    
+
+    #barra-cont ul li
+    {
+        margin-right: 0px;
+    }
+
+    #barra-cont ul li a
+    {
+        display:inline-block;
+        padding: 0px 3px;
+        text-decoration: none;
+    }
+
+//main
+    .main-contacto
+    {
+        background-attachment: local;
+        background-image: url(./Imagenes/luka-movil.jpg);
+    }
+
+    .caja-contacto
+    {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .logo-contacto
+    {
+        height: 50px;
+        width: 50px;
+    }
+    .form-contacto
+    {
+        width: 250px;
+        top: 200px;
+    }
+
+    .contacto label, .contacto input, .contacto textarea
+    {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .contacto input:not([type='submit']), .contacto textarea
+    {
+        margin-bottom: 5px;
+        font-size: 12px;   
+    }
+
+    .contact textarea
+    {
+        min-height: 100px;
+    }
+
+    input[type='submit']
+    {
+        padding: 5px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+//footer
+    .footer-contacto
+    {
+        .autor-contacto
+        {
+            font-size: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            margin-left: 12px;
+        }
+
+        .MercadoLuka-contacto
+        {
+            width: 30px;
+            height: 30px;
+            margin-left: 25px;
+            margin-top: 5px;
+        }
+
+        .derecha-contacto
+        {
+            width: 35%;
+        }
+
+        .Fans-contacto
+        {
+            font-size: 10px;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+    }
+}
