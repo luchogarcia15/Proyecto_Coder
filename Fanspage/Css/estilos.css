@@ -143,7 +143,7 @@
     text-decoration: none;
   }
   .main-index {
-    background-image: url(../Logo/Luka77.png);
+    background-image: url(./Logo/Luka77.png);
     background-attachment: local;
   }
   .imagen-central {
@@ -675,7 +675,7 @@
 }
 
 .main-contacto {
-  background-image: url(../Imagenes/luka-doncic-nba-live-dj.jpg);
+  background-image: url(./Imagenes/luka-doncic-nba-live-dj.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -831,7 +831,7 @@ input[type=submit] {
   }
   .main-contacto {
     background-attachment: local;
-    background-image: url(../Imagenes/luka-movil.jpg);
+    background-image: url(./Imagenes/luka-movil.jpg);
   }
   .caja-contacto {
     padding: 5px;
