@@ -42,50 +42,15 @@ $fuente-celular: 12px;
 
 .imgtit-index
 {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 100px;
 }
 
-.nav-index
+
+.barra-index
 {
-    width: auto;
-    background-color: $color-principal;
-    grid-area: nav;
-    border: 2px solid $color-terceario;
-}
-
-#barra-index
-{
-    background-color: $color-principal;
-    float: left;
-    height: 100%;
-
-    ul
-    {   
-        list-style: none;
-        margin: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: $fuente-barra-nav;
-    }
-
-    ul li
-    {
-        display: inline-block;
-        margin-right: 40px;
-    }
-
-    ul li a 
-    {
-        color: $color-secundario;
-        display:inline-block;
-        padding: 0px 40px;
-        text-decoration: none;
-        &:hover
-        {
-            background-color: rgb(0, 105, 105);
-        }
-    }
-
+        height: 10%;
+        background-color: $color-secundario;
 }
 
 .main-index
@@ -147,6 +112,12 @@ $fuente-celular: 12px;
         padding-top: 5px;
         width: 35px;
         height: 35px;
+        transition-property: width;
+        &:hover
+            {
+                height: 40px;
+                width: 40px;
+            }
     }
 
     .derecha-index
@@ -172,6 +143,10 @@ $fuente-celular: 12px;
 //media-index
 @media only screen and (max-width: 550px)
 {
+    .container-index
+{
+    grid-template-rows: 0fr 0fr 1fr 0fr;
+}
     .imgtit-index
     {
         width: 50px;
@@ -183,39 +158,20 @@ $fuente-celular: 12px;
         font-size: 40px;
     }
 
-//Barra de navegacion
-    #barra-index ul
-    {
-        margin: 10px;
-        font-size: 10px;
-    }    
-    
-    #barra-index ul li
-    {
-        margin-right: 0px;
-    }
-
-    #barra-index ul li a
-    {
-        display:inline-block;
-        padding: 0px 3px;
-        text-decoration: none;
-    }
-
 //main
     .main-index
     {
-        background-image: url(./Logo/Luka77.png);
+        background-image: url(../Logo/Luka77.png);
         background-attachment: local;
     }
 
     .imagen-central
     {
-        height: 200px;
-        width: 100px;
-        margin-left: 10px;
-        margin-top: 85px;
-        opacity: 0.9;
+        height: 100px;
+        width: auto;
+        margin-left: 0px;
+        margin-top:5px;
+        opacity: 0;
     }
 
 //footer
@@ -223,26 +179,26 @@ $fuente-celular: 12px;
     {
     .izquierda-index
         {
-            width: 20%;
+            width: 30%;
             font-size: 8px;
         }
 
     .Autor-index
         {
-            font-size: 8px;
+            font-size: 9px;
             padding-right: 5px;
-            padding-top: 4px;
+            padding-top: 15px;
             margin-left: 5px;
             text-align: center;
         }
 
-    .centro-index
+        .centro-index
         {
             align-items: center;
         }   
         .redes-index
         {
-            margin-left: 25px;
+            margin-left: 20px;
             width: 25px;
             height: 25px;
         }
@@ -250,7 +206,7 @@ $fuente-celular: 12px;
         .Fans-index
         {
             font-size: 8px;
-            padding: 10px;
+            padding: 15px;
             margin-left: 30px;
             text-align: center;
         }
@@ -258,13 +214,6 @@ $fuente-celular: 12px;
 }
 
 //Biografia
-.MercadoLuka-bio
-{
-    background-image: url(/Logo/Doncic.webp);
-    margin-left: 80px;
-    padding: 10px;
-}
-
 .Container-bio
 {
     height: 100%;
@@ -281,8 +230,8 @@ $fuente-celular: 12px;
 
 .imgtit-bio
 {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 110px;
     padding: 5px;
 }
 
@@ -292,47 +241,6 @@ $fuente-celular: 12px;
     grid-area: Title;
     color: $color-secundario;
     font-size: $fuente-titulo;
-}
-
-.navBio
-{
-    width: 99.7%;
-    background-color: $color-principal;
-    grid-area: nav;
-    border: 2px solid rgb(0, 2, 94);
-}
-
-#Barrabio
-{
-    background-color: $color-principal;
-    float: left;
-    height: 100%;
-
-    ul
-    {
-        list-style: none;
-        margin: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: $fuente-barra-nav;
-    }    
-    
-    ul li
-    {
-        display: inline-block;
-        margin-right: 40px;
-    }
-
-    ul li a
-    {
-        color: $color-secundario;
-        display:inline-block;
-        padding: 0px 40px;
-        text-decoration: none;
-        &:hover
-        {
-            background-color: rgb(0, 105, 105);
-        }
-    }
 }
 
 .main-bio
@@ -359,6 +267,10 @@ $fuente-celular: 12px;
     color: $color-secundario;
     padding: 15px;
     text-align: center;
+    &:hover
+        {
+            background-color: #041438;
+        }
 
 }
 
@@ -370,6 +282,10 @@ $fuente-celular: 12px;
     color: $color-secundario;
     padding: 15px;
     text-align: center;
+    &:hover
+        {
+            background-color: #041438;
+        }
 }
 
 #Cb3
@@ -380,6 +296,22 @@ $fuente-celular: 12px;
     color: $color-secundario;
     padding: 15px;
     text-align: center;
+    &:hover
+        {
+            background-color: #041438;
+        }
+}
+
+.imgbio
+{
+    transition-property: width, height;
+    transition-duration: 2s;
+
+    &:hover
+    {
+        width: 360px;
+        height: 380px;
+    }
 }
 
 .footer-bio
@@ -389,7 +321,6 @@ $fuente-celular: 12px;
     background-color: $color-principal;
     grid-area: footer;
     border: 1px solid $color-terceario;
-
 
     .izquierda-bio
     {
@@ -421,6 +352,8 @@ $fuente-celular: 12px;
     .MercadoLuka-bio
     {
         background-image: url(../Logo/Doncic.webp);
+        height: 40px;
+        padding-top: 8px;
         margin-left: 90px;
     }
 
@@ -470,24 +403,29 @@ $fuente-celular: 12px;
         font-size: 40px;
     }
 
-//Barra de navegacion
-    #Barrabio ul
-    {
-        margin: 10px;
-        font-size: 10px;
-    }    
-    
-    #Barrabio ul li
-    {
-        margin-right: 0px;
-    }
+#Cb1
+{
+    &:hover
+        {
+            background-color: #616161;
+        }
+}
 
-    #Barrabio ul li a
-    {
-        display:inline-block;
-        padding: 0px 3px;
-        text-decoration: none;
-    }
+#Cb2
+{
+    &:hover
+        {
+            background-color: #616161;
+        }
+}
+
+#Cb3
+{
+    &:hover
+        {
+            background-color: #616161;
+        }
+}
 
 //footer
     .footer-bio
@@ -547,49 +485,14 @@ $fuente-celular: 12px;
 
 .imgtit-galeria
 {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 110px;
 }
 
-.nav-galeria
+.barra-galeria
 {
-    width: auto;
-    background-color: $color-principal;
-    grid-area: nav;
-    border: 2px solid $color-terceario;
-}
-
-#barra-galeria
-{
-    background-color: $color-principal;
-    float: left;
-    height: 100%;
-
-    ul
-    {
-        list-style: none;
-        margin: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: $fuente-barra-nav;
-    }    
-    
-    ul li
-    {
-        display: inline-block;
-        margin-right: 40px;
-    }
-
-    ul li a
-    {
-        color: $color-secundario;
-        display:inline-block;
-        padding: 0px 40px;
-        text-decoration: none;
-        &:hover
-            {
-                background-color: rgb(0, 105, 105);
-            }
-    }
+    height: 10%;
+    background-color: $color-secundario;
 }
 
 .caja
@@ -602,7 +505,17 @@ $fuente-celular: 12px;
     line-height: 100px;
     text-align: center;
     margin: 5px;
+}
 
+.wallpaper
+{
+    transition-property: width;
+
+    &:hover
+    {
+        width: 250px;
+        height: 130px;
+    }
 }
 
 .flex-container-galeria
@@ -660,6 +573,12 @@ $fuente-celular: 12px;
         padding-top: 5px;
         width: 35px;
         height: 35px;
+        transition-property: width;
+    &:hover
+        {
+            height: 40px;
+            width: 40px;
+        }
     }
 
     .derecha-galeria
@@ -719,13 +638,14 @@ $fuente-celular: 12px;
     {
         width: 280px;
         text-align: center;
-        margin: 4px;
+        margin: 10px;
     }
 
     .flex-container-galeria
     {
         height: auto;
         display:inline-block;
+        padding: 40px;
     }
 
     .wallpaper
@@ -783,8 +703,8 @@ $fuente-celular: 12px;
 
 .imgtit-Hig
 {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
 }
 
 .Title-Hig
@@ -792,7 +712,7 @@ $fuente-celular: 12px;
     background-color: $color-principal;
     grid-area: Title;
     color: white;
-    font-size: 60px;
+    font-size: 50px;
 }
 .Container-fluid
 {
@@ -815,7 +735,6 @@ $fuente-celular: 12px;
 .AbajoHig
 {
     height: 13%;
-    padding: 10px;
     background-color: $color-principal;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -866,7 +785,7 @@ $fuente-celular: 12px;
 .imgtit-contacto
 {
     width: 90px;
-    height: 90px;
+    height: 100px;
 }
 
 .title-contacto
@@ -877,50 +796,15 @@ $fuente-celular: 12px;
     font-size: 70px;
 }
 
-.nav-cont
+.barra-contacto
 {
-    width: 100%;
-    background-color:$color-principal;
-    grid-area: nav;
-    border: 2px solid $color-terceario;
-}
-
-#barra-cont
-{
-    background-color: $color-principal;
-    float: left;
-    height: 100%;
-
-    ul
-    {
-        list-style: none;
-        margin: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: $fuente-barra-nav;
-    }    
-    
-    ul li
-    {
-        display: inline-block;
-        margin-right: 40px;
-    }
-
-    ul li a
-    {
-        color: $color-secundario;
-        display:inline-block;
-        padding: 0px 40px;
-        text-decoration: none;
-        &:hover
-        {
-            background-color: rgb(0, 105, 105);
-        }
-    }
+    height: 10%;
+    background-color: $color-secundario;
 }
 
 .main-contacto
 {
-    background-image: url(./Imagenes/luka-doncic-nba-live-dj.jpg);
+    background-image: url(../Imagenes/luka-doncic-nba-live-dj.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -946,6 +830,29 @@ $fuente-celular: 12px;
     transform: translate(-50%, -50%);
     box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
     border-radius: 10px;
+    animation: animacion 2s linear infinite;
+}
+
+@keyframes animacion {
+    0%
+    {
+        box-shadow: 0 0 0 0 rgba(0, 56, 177, 0.6), 0 0 0 0 rgb(0, 56, 177, .6);
+    }
+
+    30%
+    {
+        box-shadow: 0 0 0 100px rgba(0, 56, 177, 0), 0 0 0 0 rgba(0, 56, 177, .6);
+    }
+
+    65%
+    {
+        box-shadow: 0 0 0 100px rgb(0, 56, 177, 0), 0 0 0 30px rgb(0, 56, 177, 0);
+    }
+
+    100%
+    {
+        box-shadow: 0 0 0 0 rgb(0, 56, 177, 0), 0 0 0 30px rgb(0, 56, 177, 0);
+    }
 }
 
 header
@@ -1079,7 +986,7 @@ input[type='submit']
     .container-contacto
     {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 2fr 1fr;
+        grid-template-rows: 0fr 0fr 2fr 0fr;
         grid-template-areas: 'Title'
                              'nav'
                              'main'
@@ -1097,59 +1004,40 @@ input[type='submit']
         font-size: 40px;
     }
 
-//Barra de navegacion
-    #barra-cont ul
-    {
-        margin: 10px;
-        font-size: 10px;
-    }    
-
-    #barra-cont ul li
-    {
-        margin-right: 0px;
-    }
-
-    #barra-cont ul li a
-    {
-        display:inline-block;
-        padding: 0px 3px;
-        text-decoration: none;
-    }
-
 //main
     .main-contacto
     {
         background-attachment: local;
-        background-image: url(./Imagenes/luka-movil.jpg);
+        background-image: url(../Imagenes/luka-movil.jpg);
     }
 
     .caja-contacto
     {
-        padding: 5px;
+        padding: 10px;
         font-size: 12px;
     }
 
     .logo-contacto
     {
-        height: 50px;
-        width: 50px;
+        height: 60px;
+        width: 60px;
     }
     .form-contacto
     {
-        width: 250px;
-        top: 200px;
+        width: 300px;
+        top: 235px;
     }
 
     .contacto label, .contacto input, .contacto textarea
     {
-        font-size: 12px;
-        margin-bottom: 6px;
+        font-size: 15px;
+        margin-bottom: 8px;
     }
 
     .contacto input:not([type='submit']), .contacto textarea
     {
-        margin-bottom: 5px;
-        font-size: 12px;   
+        margin-bottom: 8px;
+        font-size: 15px;   
     }
 
     .contact textarea
@@ -1160,7 +1048,7 @@ input[type='submit']
     input[type='submit']
     {
         padding: 5px;
-        font-size: 12px;
+        font-size: 15px;
         cursor: pointer;
     }
 
